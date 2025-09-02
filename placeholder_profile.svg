@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Background Circle -->
+  <circle cx="150" cy="150" r="150" fill="#F8B7CD" />
+  
+  <!-- Abstract Face Shape -->
+  <circle cx="150" cy="120" r="60" fill="#FFDAB9" />
+  
+  <!-- Hair -->
+  <path d="M90 120 Q 150 30 210 120" fill="#4A4A4A" />
+  
+  <!-- Neck and Shoulders -->
+  <path d="M120 180 Q 150 200 180 180 L 200 240 L 100 240 Z" fill="#FFDAB9" />
+  
+  <!-- Abstract Facial Features -->
+  <ellipse cx="130" cy="110" rx="5" ry="8" fill="#4A4A4A" />
+  <ellipse cx="170" cy="110" rx="5" ry="8" fill="#4A4A4A" />
+  <path d="M130 145 Q 150 160 170 145" fill="none" stroke="#4A4A4A" stroke-width="3" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="150" cy="150" r="140" fill="none" stroke="#E6E6FA" stroke-width="5" />
+  <text x="150" y="280" font-family="'Dancing Script', cursive" font-size="24" fill="#4A4A4A" text-anchor="middle">Ayooshi Kharat</text>
+</svg>
