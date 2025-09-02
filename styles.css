@@ -20,15 +20,15 @@
 }
 
 :root {
-    --primary: #F8B7CD;
-    --primary-light: #ffd1df;
-    --primary-dark: #d999ae;
-    --secondary: #E6E6FA;
-    --accent: #FFDAB9;
-    --background: #F5F5F5;
-    --text: #4A4A4A;
+    --primary: #D4A574;
+    --primary-light: #E6C09A;
+    --primary-dark: #B8925F;
+    --secondary: #2C3E50;
+    --accent: #F39C12;
+    --background: #1A252F;
+    --text: #ECF0F1;
     --white: #ffffff;
-    --shadow: rgba(0, 0, 0, 0.08);
+    --shadow: rgba(0, 0, 0, 0.3);
     --padding: 24px;
     --border-radius: 12px;
     --transition: all 0.3s ease;
@@ -40,7 +40,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--background);
+    background: linear-gradient(135deg, #1A252F 0%, #2C3E50 50%, #34495E 100%);
     color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
@@ -147,11 +147,13 @@ section {
 
 /* ===== HEADER & NAVIGATION ===== */
 header {
-    background-color: var(--white);
+    background: rgba(26, 37, 47, 0.95);
+    backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 10px var(--shadow);
+    border-bottom: 1px solid rgba(212, 165, 116, 0.2);
 }
 
 nav {
@@ -208,7 +210,7 @@ nav {
 .hero {
     padding-top: 150px;
     padding-bottom: 80px;
-    background-color: var(--white);
+    background: linear-gradient(135deg, #2C3E50 0%, #34495E 50%, #3F5A75 100%);
 }
 
 .hero-content {
@@ -263,8 +265,8 @@ nav {
 
 /* ===== ABOUT SECTION ===== */
 .about {
-    background-color: var(--secondary);
-    background-image: radial-gradient(var(--white) 1px, transparent 1px);
+    background: linear-gradient(135deg, #34495E 0%, #2C3E50 50%, #1A252F 100%);
+    background-image: radial-gradient(rgba(212, 165, 116, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
 }
 
@@ -277,10 +279,11 @@ nav {
 .education-item {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: var(--white);
+    background: rgba(44, 62, 80, 0.8);
     border-radius: var(--border-radius);
     box-shadow: 0 5px 15px var(--shadow);
     transition: var(--transition);
+    border: 1px solid rgba(212, 165, 116, 0.3);
 }
 
 .education-item:hover {
@@ -314,7 +317,7 @@ nav {
 
 /* ===== SKILLS SECTION ===== */
 .skills {
-    background-color: var(--white);
+    background: linear-gradient(135deg, #2C3E50 0%, #34495E 50%, #3F5A75 100%);
 }
 
 .skills-content {
@@ -324,18 +327,20 @@ nav {
 }
 
 .skill-card {
-    background-color: var(--background);
+    background: rgba(212, 165, 116, 0.1);
     padding: 30px;
     border-radius: var(--border-radius);
     box-shadow: 0 5px 15px var(--shadow);
     text-align: center;
     transition: var(--transition);
+    border: 1px solid rgba(212, 165, 116, 0.2);
 }
 
 .skill-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 25px var(--shadow);
-    background-color: var(--white);
+    background: rgba(212, 165, 116, 0.2);
+    border-color: var(--primary);
 }
 
 .skill-icon {
@@ -365,7 +370,7 @@ nav {
 
 /* ===== EXPERIENCE SECTION ===== */
 .experience {
-    background-color: var(--secondary);
+    background: linear-gradient(135deg, #1A252F 0%, #2C3E50 50%, #34495E 100%);
 }
 
 .experience-category {
@@ -415,13 +420,14 @@ nav {
 }
 
 .experience-card {
-    background-color: var(--white);
+    background: rgba(44, 62, 80, 0.8);
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: 0 5px 15px var(--shadow);
     transition: var(--transition);
     height: auto;
     min-height: 180px;
+    border: 1px solid rgba(212, 165, 116, 0.3);
 }
 
 .experience-card:hover {
@@ -431,8 +437,8 @@ nav {
 
 .experience-header {
     padding: 20px;
-    background-color: var(--primary-light);
-    border-bottom: 2px dashed var(--white);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -473,11 +479,11 @@ nav {
 
 /* ===== CONTACT SECTION ===== */
 .contact {
-    background-color: var(--white);
-    background-image: linear-gradient(135deg, var(--primary-light) 25%, transparent 25%),
-                      linear-gradient(225deg, var(--primary-light) 25%, transparent 25%),
-                      linear-gradient(45deg, var(--primary-light) 25%, transparent 25%),
-                      linear-gradient(315deg, var(--primary-light) 25%, var(--white) 25%);
+    background: linear-gradient(135deg, #2C3E50 0%, #34495E 50%, #3F5A75 100%);
+    background-image: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 25%, transparent 25%),
+                      linear-gradient(225deg, rgba(212, 165, 116, 0.1) 25%, transparent 25%),
+                      linear-gradient(45deg, rgba(212, 165, 116, 0.1) 25%, transparent 25%),
+                      linear-gradient(315deg, rgba(212, 165, 116, 0.1) 25%, transparent 25%);
     background-position: 40px 0, 40px 0, 0 0, 0 0;
     background-size: 80px 80px;
     background-repeat: repeat;
@@ -488,12 +494,13 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    background-color: var(--white);
+    background: rgba(44, 62, 80, 0.9);
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: 0 10px 30px var(--shadow);
     margin: 0 auto;
     max-width: 1000px;
+    border: 1px solid rgba(212, 165, 116, 0.3);
 }
 
 .contact-info-only {
@@ -503,7 +510,7 @@ nav {
 
 .contact-info {
     padding: 40px;
-    background-color: var(--primary-light);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     height: 100%;
     text-align: center;
 }
@@ -577,10 +584,11 @@ nav {
 
 /* ===== FOOTER ===== */
 footer {
-    background-color: var(--text);
-    color: var(--white);
+    background: linear-gradient(135deg, #1A252F 0%, #2C3E50 100%);
+    color: var(--primary-light);
     text-align: center;
     padding: 30px 0;
+    border-top: 1px solid rgba(212, 165, 116, 0.2);
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
